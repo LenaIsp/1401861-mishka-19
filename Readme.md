@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Исправникова](https://up.htmlacademy.ru/adaptive/19/user/1401861).
-* Наставник: `Неизвестно`.
+* Наставник: [Михал Кислый](https://up.htmlacademy.ru/adaptive/19/user/1118577).
 
 ---
 
