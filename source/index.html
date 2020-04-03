@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Мишка</title>
+	</head>
+	<body>
+		<header class="page-header">
+			<nav class="navigation">
+				<button class="navigation__toggle" type="button">Меню</button>
+				<div class="navigation__wrapper">
+					<ul class="navigation__list menu">
+						<li class="menu__item">
+							<a class="menu__link menu__link--logo" href="index.html">
+								<img class="menu__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Mishka">
+							</a>
+						</li>
+						<li class="menu__item menu__item--product">
+							<a class="menu__link " href="catalog.html">Каталог товаров</a>
+						</li>
+						<li class="menu__item menu__item--knitting">
+							<a class="menu__link" href="form.html">Вязание на заказ</a>
+						</li>
+						<li class="menu__item menu__item--search">
+							<a class="menu__link" >Поиск по сайту</a>
+						</li>
+						<li class="menu__item menu__item--cart">
+							<a class="menu__link">Корзина: пока пуста</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="page-main">
+			<section class="banner">
+				<div class="banner__bg">
+					<img class="banner__image" src="https://via.placeholder.com/320x373" width="320" height="373" alt="Background">
+				</div>
+				<p class="banner__intro">Милые штуки ручной работы для дома</p>
+			</section>
+			<section class="catalog">
+				<div class="catalog__wrap">
+					<div class="catalog__item catalog__item--light">
+						<p class="catalog__title catalog__title--interior">Предметы интерьера</p>
+					</div>
+					<div class="catalog__item">
+						<p class="catalog__title catalog__title--toys">Детские игрушки</p>
+					</div>
+				</div>
+			</section>
+			<section class="product-card">
+				<p class="product-card__header">Вязаные корзинки</p>
+				<p class="product-card__title">Товар недели</p>
+				<p class="product-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+				<div class="product-card__description description-card">					
+					<table class="description-card__list">
+						<tr class="description-card__item">
+							<td>Цвет:</td>
+							<td>«Тиффани»/серый</td>
+						</tr>
+						<tr class="description-card__item">
+							<td>Диаметр:</td>
+							<td>25 см</td>
+						</tr>
+						<tr class="description-card__item">
+							<td>Высота:</td>
+							<td>15 см</td>
+						</tr>
+					</table>
+				</div>
+				<img class="product-card__image" src="https://via.placeholder.com/320x373" width="320" height="373" alt="Background">
+				<p class="product-card__price">Цена: 990 руб.</p>
+				<button class="product-card__button" type="button">ЗАКАЗАТЬ</button>
+			</section>			
+			<section class="about">
+				<div class="about__header">Коротко о нас:</div>
+				<div class="about__left">
+					<div class="about__item about__item--flower">Экологически чистые материалы</div>
+					<div class="about__item about__item--money">Скандинавский стиль по российской цене</div>
+					<div class="about__item about__item--heart">Увеличивает лайки на фотографиях</div>
+				</div>
+				<div class="about__right">
+					<div class="about__item about__item--knot">Связано вручную с любовью и умилением</div>
+					<div class="about__item about__item--rocket">Поддержка отечественного производителя</div>
+					<div class="about__item about__item--gift">Поставляется в подарочной упаковке</div>
+				</div>
+			</section>
+		</main>
+		<footer class="page-footer">
+			<div class="page-footer__social social">      
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--instagram" href="#">INST</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="#">FB</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--twitter" href="#">TW</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright copyright">
+				<p class="copyright__text">Разработано:</p>
+				<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+					<img class="copyright__logo-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML-academy">
+				</a>
+			</div>
+		</footer>
+	</body>
 </html>
