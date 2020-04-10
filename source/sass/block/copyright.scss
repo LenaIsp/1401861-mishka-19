@@ -1,0 +1,17 @@
+.copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright__logo {
+	width: 27px;
+	height: 27px;	
+}
+
+.copyright__text {
+	font-family: $fonts_bold;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+}

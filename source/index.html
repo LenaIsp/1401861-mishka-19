@@ -3,20 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Мишка</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header">
-			<nav class="navigation">
-				<button class="navigation__toggle" type="button">Меню</button>
+			<nav class="navigation wrapper">
+				<div class="navigation__toggle">Меню</div>
 				<div class="navigation__wrapper">
 					<ul class="navigation__list menu">
-						<li class="menu__item">
+						<li class="menu__item menu__item--visible">
 							<a class="menu__link menu__link--logo" href="index.html">
-								<img class="menu__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Mishka">
+								<img class="menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
 							</a>
 						</li>
 						<li class="menu__item menu__item--product">
-							<a class="menu__link " href="catalog.html">Каталог товаров</a>
+							<a class="menu__link" href="catalog.html">Каталог товаров</a>
 						</li>
 						<li class="menu__item menu__item--knitting">
 							<a class="menu__link" href="form.html">Вязание на заказ</a>
@@ -34,11 +37,11 @@
 		<main class="page-main">
 			<section class="banner">
 				<div class="banner__bg">
-					<img class="banner__image" src="https://via.placeholder.com/320x373" width="320" height="373" alt="Background">
+					<img class="banner__image" src="img/hero-mobile@1x.jpg" width="575" height="373" alt="Баннер">
 				</div>
 				<p class="banner__intro">Милые штуки ручной работы для дома</p>
 			</section>
-			<section class="catalog">
+			<section class="catalog wrapper-mob">
 				<div class="catalog__wrap">
 					<div class="catalog__item catalog__item--light">
 						<p class="catalog__title catalog__title--interior">Предметы интерьера</p>
@@ -48,7 +51,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="product-card">
+
+			<section class="product-card wrapper">
 				<p class="product-card__header">Вязаные корзинки</p>
 				<p class="product-card__title">Товар недели</p>
 				<p class="product-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
@@ -68,11 +72,11 @@
 						</tr>
 					</table>
 				</div>
-				<img class="product-card__image" src="https://via.placeholder.com/320x373" width="320" height="373" alt="Background">
+				<img class="product-card__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Background">
 				<p class="product-card__price">Цена: 990 руб.</p>
 				<button class="product-card__button button" type="button">ЗАКАЗАТЬ</button>
-			</section>			
-			<section class="about">
+			</section>
+			<section class="about wrapper">
 				<div class="about__header">Коротко о нас:</div>
 				<div class="about__left">
 					<div class="about__item about__item--flower">Экологически чистые материалы</div>
@@ -85,7 +89,7 @@
 					<div class="about__item about__item--gift">Поставляется в подарочной упаковке</div>
 				</div>
 			</section>
-			<section class="reviews">
+			<section class="reviews wrapper">
 				<div class="reviews__wrapper slider">
 					<h2 class="reviews__header">Отзывы</h2>
 					<div class="reviews__list slider__list">
@@ -102,7 +106,7 @@
 					<button class="reviews__button button" type="button">Написать</button>
 				</div>
 			</section>
-			<section class="contacts">
+			<section class="contacts wrapper">
 				<h2 class="contacts__header"></h2>
 				<div class="contacts__info">
 					<table class="contacts__list">
@@ -116,29 +120,39 @@
 						</tr>
 					</table>
 				</div>
-				<div class="contacts__map"></div>
-				<button class="contacts__button button" type="button">Напишите нам</button>
+			</section>
+			<section class="map">
+				<div class="map__body"></div>
+				<button class="map__button button" type="button">Напишите нам</button>
 			</section>
 		</main>
 		<footer class="page-footer">
-			<div class="page-footer__social social">      
-				<ul class="social__list">
-					<li class="social__item">
-						<a class="social__link social__link--instagram" href="#">INST</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--facebook" href="#">FB</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--twitter" href="#">TW</a>
-					</li>
-				</ul>
-			</div>
-			<div class="page-footer__copyright copyright">
-				<p class="copyright__text">Разработано:</p>
-				<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-					<img class="copyright__logo-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML-academy">
-				</a>
+			<div class="wrapper">
+				<div class="page-footer__social social">      
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__link social__link--instagram" href="#">
+								<img src="img/icon-insta.svg" alt="instagram">
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--facebook" href="#">
+								<img src="img/icon-fb.svg" alt="facebook">
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--twitter" href="#">
+								<img src="img/icon-twitter.svg" alt="twitter">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page-footer__copyright copyright">
+					<p class="copyright__text">Разработано </p>
+					<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+						<img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML-academy">
+					</a>
+				</div>
 			</div>
 		</footer>
 	</body>
