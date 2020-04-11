@@ -3,20 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Мишка</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header">
-			<nav class="navigation">
-				<button class="navigation__toggle" type="button">Меню</button>
+			<nav class="navigation wrapper">
+				<div class="navigation__toggle">Меню</div>
 				<div class="navigation__wrapper">
 					<ul class="navigation__list menu">
-						<li class="menu__item">
+						<li class="menu__item menu__item--visible">
 							<a class="menu__link menu__link--logo" href="index.html">
-								<img class="menu__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Mishka">
+								<img class="menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
 							</a>
 						</li>
 						<li class="menu__item menu__item--product">
-							<a class="menu__link " href="catalog.html">Каталог товаров</a>
+							<a class="menu__link" href="catalog.html">Каталог товаров</a>
 						</li>
 						<li class="menu__item menu__item--knitting">
 							<a class="menu__link" href="form.html">Вязание на заказ</a>
@@ -33,7 +36,7 @@
 		</header>
 		<main class="page-main">
 			<div class="header-catalog">
-				<h1 class="visually-hidden">Вязание на заказ</h1>
+				<h1 class="header-catalog__item">Вязание на заказ</h1>
 			</div>
 			<form class="form" action="" method="post" name="form">
 				<p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -98,16 +101,16 @@
 				<div class="form__info-name">
 					<div class="form__title">ФИО</div>
 					<div class="form__body inp-text">
-						<div class="inp-text__item inp-text">
-							<label class="inp-text__namel">Имя:</label>
+						<div class="inp-text__item">
+							<label class="inp-text__name">Имя:</label>
 							<input class="inp-text__enter" type="text" placeholder="Введите ваше имя*">
 						</div>
 						<div class="inp-text__item">
-							<label class="inp-text__namel">Фамилия:</label>
+							<label class="inp-text__name">Фамилия:</label>
 							<input class="inp-text__enter" type="text" placeholder="Укажите фамилию*">
 						</div>
 						<div class="inp-text__item">
-							<label class="inp-text__namel">Отчество:</label>
+							<label class="inp-text__name">Отчество:</label>
 							<input class="inp-text__enter" type="text" placeholder="Отчество, если желаете">
 						</div>
 					</div>
@@ -145,24 +148,32 @@
 			</form>
 		</main>
 		<footer class="page-footer">
-			<div class="page-footer__social social">      
-				<ul class="social__list">
-					<li class="social__item">
-						<a class="social__link social__link--instagram" href="#">INST</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--facebook" href="#">FB</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--twitter" href="#">TW</a>
-					</li>
-				</ul>
-			</div>
-			<div class="page-footer__copyright copyright">
-				<p class="copyright__text">Разработано:</p>
-				<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-					<img class="copyright__logo-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML-academy">
-				</a>
+			<div class="wrapper">
+				<div class="page-footer__social social">      
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__link social__link--instagram" href="#">
+								<img src="img/icon-insta.svg" alt="instagram">
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--facebook" href="#">
+								<img src="img/icon-fb.svg" alt="facebook">
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--twitter" href="#">
+								<img src="img/icon-twitter.svg" alt="twitter">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page-footer__copyright copyright">
+					<p class="copyright__text">Разработано </p>
+					<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+						<img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML-academy">
+					</a>
+				</div>
 			</div>
 		</footer>
 	</body>

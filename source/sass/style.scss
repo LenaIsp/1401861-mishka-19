@@ -1,0 +1,32 @@
+//layout
+@import "utils/colors.scss";
+@import "utils/fonts.scss";
+@import "utils/media.scss";
+@import "utils/mixins.scss";
+@import "utils/global.scss";
+
+// styles
+@import "blocks/about.scss";
+@import "blocks/banner.scss";
+@import "blocks/button.scss";
+@import "blocks/catalog.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/contacts.scss";
+@import "blocks/copyright.scss";
+@import "blocks/description-card.scss";
+@import "blocks/header-catalog.scss";
+@import "blocks/inp-text.scss";
+@import "blocks/menu.scss";
+@import "blocks/navigation.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/product.scss";
+@import "blocks/product-card.scss";
+@import "blocks/radio.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+@import "blocks/social.scss";
+@import "blocks/textarea.scss";
+@import "blocks/video.scss";
+@import "blocks/wrapper.scss";

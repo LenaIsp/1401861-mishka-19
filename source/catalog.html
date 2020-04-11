@@ -3,20 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Мишка</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header">
-			<nav class="navigation">
-				<button class="navigation__toggle" type="button">Меню</button>
+			<nav class="navigation wrapper">
+				<div class="navigation__toggle">Меню</div>
 				<div class="navigation__wrapper">
 					<ul class="navigation__list menu">
-						<li class="menu__item">
+						<li class="menu__item menu__item--visible">
 							<a class="menu__link menu__link--logo" href="index.html">
-								<img class="menu__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Mishka">
+								<img class="menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
 							</a>
 						</li>
 						<li class="menu__item menu__item--product">
-							<a class="menu__link " href="catalog.html">Каталог товаров</a>
+							<a class="menu__link" href="catalog.html">Каталог товаров</a>
 						</li>
 						<li class="menu__item menu__item--knitting">
 							<a class="menu__link" href="form.html">Вязание на заказ</a>
@@ -33,12 +36,12 @@
 		</header>
 		<main class="page-main">
 			<div class="header-catalog">
-				<h1 class="visually-hidden">Каталог товаров</h1>
+				<h1 class="header-catalog__item">Каталог товаров</h1>
 			</div>
-			<section class="product">
+			<section class="product wrapper">
 				<div class="product__item">
 					<div class="product__picture">
-						<img class="product__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+						<img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
 					</div>
 					<div class="product__wrap">
 						<div class="product__title">Зайчик-попрыгайчик</div>
@@ -48,7 +51,7 @@
 				</div>
 				<div class="product__item">
 					<div class="product__picture">
-						<img class="product__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Корзинка для белья">
+						<img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
 					</div>
 					<div class="product__wrap">
 						<div class="product__title">Корзинка для белья</div>
@@ -58,7 +61,7 @@
 				</div>
 				<div class="product__item">
 					<div class="product__picture">
-						<img class="product__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt=">Большая корзинка для игрушек">
+						<img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="195" alt=">Большая корзинка для игрушек">
 					</div>
 					<div class="product__wrap">
 						<div class="product__title">Большая корзинка для игрушек</div>
@@ -79,24 +82,32 @@
 			</section>
 		</main>
 		<footer class="page-footer">
-			<div class="page-footer__social social">      
-				<ul class="social__list">
-					<li class="social__item">
-						<a class="social__link social__link--instagram" href="#">INST</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--facebook" href="#">FB</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--twitter" href="#">TW</a>
-					</li>
-				</ul>
-			</div>
-			<div class="page-footer__copyright copyright">
-				<p class="copyright__text">Разработано:</p>
-				<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-					<img class="copyright__logo-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML-academy">
-				</a>
+			<div class="wrapper">
+				<div class="page-footer__social social">      
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__link social__link--instagram" href="#">
+								<img src="img/icon-insta.svg" alt="instagram">
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--facebook" href="#">
+								<img src="img/icon-fb.svg" alt="facebook">
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--twitter" href="#">
+								<img src="img/icon-twitter.svg" alt="twitter">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page-footer__copyright copyright">
+					<p class="copyright__text">Разработано </p>
+					<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+						<img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML-academy">
+					</a>
+				</div>
 			</div>
 		</footer>
 	</body>
