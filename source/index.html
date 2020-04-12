@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Мишка</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
@@ -15,7 +14,7 @@
 					<ul class="navigation__list menu">
 						<li class="menu__item menu__item--visible">
 							<a class="menu__link menu__link--logo" href="index.html">
-								<img class="menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+								<img class="menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Logotype">
 							</a>
 						</li>
 						<li class="menu__item menu__item--product">
@@ -35,13 +34,15 @@
 			</nav>
 		</header>
 		<main class="page-main">
+			<h1 class="visually-hidden">Игрушки и предметы интерьера ручной работы</h1>
 			<section class="banner">
 				<div class="banner__bg">
 					<img class="banner__image" src="img/hero-mobile@1x.jpg" width="575" height="373" alt="Баннер">
 				</div>
-				<p class="banner__intro">Милые штуки ручной работы для дома</p>
+				<h2 class="banner__intro">Милые штуки ручной работы для дома</h2>
 			</section>
 			<section class="catalog wrapper-mob">
+				<h2 class="banner__intro">Каталог игрушек</h2>
 				<div class="catalog__wrap">
 					<div class="catalog__item catalog__item--light">
 						<p class="catalog__title catalog__title--interior">Предметы интерьера</p>
@@ -53,7 +54,7 @@
 			</section>
 
 			<section class="product-card wrapper">
-				<p class="product-card__header">Вязаные корзинки</p>
+				<h2 class="product-card__header">Вязаные корзинки</h2>
 				<p class="product-card__title">Товар недели</p>
 				<p class="product-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
 				<div class="product-card__description description-card">
@@ -77,7 +78,7 @@
 				<button class="product-card__button button" type="button">ЗАКАЗАТЬ</button>
 			</section>
 			<section class="about wrapper">
-				<div class="about__header">Коротко о нас:</div>
+				<h3 class="about__header">Коротко о нас:</h3>
 				<div class="about__left">
 					<div class="about__item about__item--flower">Экологически чистые материалы</div>
 					<div class="about__item about__item--money">Скандинавский стиль по российской цене</div>
@@ -91,7 +92,7 @@
 			</section>
 			<section class="reviews wrapper">
 				<div class="reviews__wrapper slider">
-					<h2 class="reviews__header">Отзывы</h2>
+					<h3 class="reviews__header">Отзывы</h3>
 					<div class="reviews__list slider__list">
 						<div class="reviews__item">
 							<div class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</div>
@@ -107,12 +108,12 @@
 				</div>
 			</section>
 			<section class="contacts wrapper">
-				<h2 class="contacts__header"></h2>
+				<h3 class="contacts__header">Контакты</h3>
 				<div class="contacts__info">
 					<table class="contacts__list">
 						<tr class="contacts__item">
 							<td>e-mail:</td>
-							<td><a href="mailto:e-mail:адрес:">info@mimimishkashop.ru</a></td>
+							<td><a class="contacts__mail" href="mailto:e-mail:адрес:">info@mimimishkashop.ru</a></td>
 						</tr>
 						<tr class="contacts__item">
 							<td>адрес:</td>
@@ -122,7 +123,10 @@
 				</div>
 			</section>
 			<section class="map">
-				<div class="map__body"></div>
+				<h3 class="visually-hidden">Как нас найти</h3>
+				<div class="map__body">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A18f50ec9c1432faf7f883a66e5117a8d22d9b082af7c50f6f074caa7e88e0485&amp;width=100%25&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
 				<button class="map__button button" type="button">Напишите нам</button>
 			</section>
 		</main>

@@ -6,6 +6,8 @@
 @import "utils/global.scss";
 
 // styles
+@import "blocks/wrapper.scss";
+
 @import "blocks/about.scss";
 @import "blocks/banner.scss";
 @import "blocks/button.scss";
@@ -14,9 +16,11 @@
 @import "blocks/contacts.scss";
 @import "blocks/copyright.scss";
 @import "blocks/description-card.scss";
+@import "blocks/form.scss";
 @import "blocks/header-catalog.scss";
 @import "blocks/inp-text.scss";
 @import "blocks/menu.scss";
+@import "blocks/map.scss";
 @import "blocks/navigation.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
@@ -29,4 +33,4 @@
 @import "blocks/social.scss";
 @import "blocks/textarea.scss";
 @import "blocks/video.scss";
-@import "blocks/wrapper.scss";
+@import "blocks/visually-hidden.scss";

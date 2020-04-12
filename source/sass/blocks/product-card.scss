@@ -9,13 +9,13 @@
 .product-card__header {
 	font-size: 25px;
 	line-height: 30px;
-	font-weight: bold;
+	font-family: $fonts_bold;
 }
 .product-card__title {
 	font-size: 17px;
 	line-height: 20px;
 	color: $greeny;
-	font-weight: bold;
+	font-family: $fonts_bold;
 }
 .product-card__text {
 	font-size: 15px;
@@ -33,7 +33,6 @@
 .product-card__price {	
 	font-size: 17px;
 	line-height: 24px;
-	font-weight: bold;
 	text-align: center;
 	color: $greyish_brown;
 }
