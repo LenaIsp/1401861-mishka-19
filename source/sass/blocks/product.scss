@@ -1,21 +1,24 @@
 .product__item {
-	border: 1px solid $whitetwo;
-	margin-bottom: 30px;	
+  border: 1px solid $whitetwo;
+  margin-bottom: 30px;
 }
+
 .product__title {
-	font-size: 17px;
-	line-height: 24px;
-	font-family: $fonts_bold;
-	font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $fonts_bold;
+  font-weight: bold;
 }
+
 .product__description {
-	font-size: 13px;
-	line-height: 30px;
-	color: #greyish_brown;
+  font-size: 13px;
+  line-height: 30px;
+  color: $greyish_brown;
 }
+
 .product__price {
-	font-size: 15px;
-	line-height: 24px;
-	font-family: $fonts_bold;
-	font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $fonts_bold;
+  font-weight: bold;
 }

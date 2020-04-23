@@ -1,17 +1,20 @@
 .navigation {
-	position: relative;
+  position: relative;
 }
+
 .navigation__list {
-	padding: 15px 0;
+  padding: 15px 0;
 }
+
 .navigation__toggle {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	cursor: pointer;
-	display: block;
-		@media (min-width: $tablet-width) {
-			display: none;
-		}
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

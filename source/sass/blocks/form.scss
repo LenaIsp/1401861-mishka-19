@@ -1,28 +1,32 @@
 .form__intro {
-	font-size: 13px;
-	line-height: 24px;
-	color: $greyish_brown;
-	margin-bottom: 30px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $greyish_brown;
+  margin-bottom: 30px;
 }
-.form__title {	
-	font-size: 17px;
-	line-height: 17px;
-	font-family: $fonts_bold;
-	color: $greeny;
-	margin-bottom:25px;
+
+.form__title {
+  font-size: 17px;
+  line-height: 17px;
+  font-family: $fonts_bold;
+  color: $greeny;
+  margin-bottom: 25px;
 }
-.form__body {	
-	margin-bottom: 35px;
-	font-size: 17px;
-	line-height: 17px;
-	font-family: $fonts_bold;
+
+.form__body {
+  margin-bottom: 35px;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: $fonts_bold;
 }
-.form__legend {	
-	font-size: 14px;
-	line-height: 16px;
-	color: $greyish_brown;
-	font-family: fonts;
+
+.form__legend {
+  font-size: 14px;
+  line-height: 16px;
+  color: $greyish_brown;
+  font-family: $fonts;
 }
+
 .form__button {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }

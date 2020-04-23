@@ -1,9 +1,10 @@
 .page-footer {
-	background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
-.page-footer .wrapper{
-		@media (min-width: $tablet-width) {
-			display: flex;
-			justify-content: space-between;
-		}
+
+.page-footer .wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

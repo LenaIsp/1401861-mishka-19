@@ -1,51 +1,63 @@
 .product-card {
-		@media (min-width: $tablet-width) {
-			display: flex;
-			flex-wrap: wrap;
-			flex-direction: column;
-			position: relative;
-		}
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+  }
 }
+
 .product-card__header {
-	font-size: 25px;
-	line-height: 30px;
-	font-family: $fonts_bold;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: $fonts_bold;
 }
+
 .product-card__title {
-	font-size: 17px;
-	line-height: 20px;
-	color: $greeny;
-	font-family: $fonts_bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $greeny;
+  font-family: $fonts_bold;
 }
+
 .product-card__text {
-	font-size: 15px;
-	line-height: 24px;
-	color: $greyish_brown;
+  font-size: 15px;
+  line-height: 24px;
+  color: $greyish_brown;
 }
-.description-card__item td{
-	border-bottom: 1px solid #ccc;
+
+.description-card__item td {
+  border-bottom: 1px solid $grey;
 }
-.product-card__description {	
-	font-size: 15px;
-	line-height: 24px;
-	color: $greyish_brown;
+
+.product-card__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $greyish_brown;
 }
-.product-card__price {	
-	font-size: 17px;
-	line-height: 24px;
-	text-align: center;
-	color: $greyish_brown;
+
+.product-card__price {
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: $greyish_brown;
 }
+
 .product-card__image {
-		@media (min-width: $tablet-width) {
-			display: flex;
-			flex-wrap: wrap;
-			flex-direction: column;
-			position: relative;
-		}
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+  }
 }
-.product-card__header, .product-card__title, .product-card__text, .product-card__description, .product-card__price{
-	@media (min-width: $tablet-width) {
-		width: 50%;
-	}
+
+.product-card__header,
+.product-card__title,
+.product-card__text,
+.product-card__description,
+.product-card__price {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
