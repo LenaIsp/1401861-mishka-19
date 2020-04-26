@@ -1,3 +1,9 @@
+.banner {
+	border-top: 1px solid $whitetwo;
+	@media (min-width: $tablet-width) {
+		margin-top: -50px;
+	}
+}
 .banner__bg {
   background-color: $bg;
   text-align: center;

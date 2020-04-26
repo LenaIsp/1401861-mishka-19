@@ -1,27 +1,119 @@
 .menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+  text-align: center;
   @include reset;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 17px;
   line-height: 24px;
   font-family: $fonts_bold;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    background-color: transparent;
   }
 }
 
 .menu__item {
-  list-style: none;
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
+  display: flex;
+  flex-direction: column;
+  &--bottom {
+    display: none;
   }
 
-  &--visible {
-    display: block;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    &--top {
+      order: 1;
+    }
+
+    &--middle {
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    &--bottom {
+      display: flex;
+      order: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--top {
+      order: 0;
+    }
+
+    &--middle {
+      width: auto;
+      justify-content: flex-end;
+    }
+
+    &--bottom {
+      width: 100%;
+    }
+  }
+
+}
+
+.menu__link {
+  padding: 30px 0;
+  box-shadow: 0px 1px 0 0 $whitetwo, inset 0px 1px 0 0$whitetwo;
+  &--sale, 
+  &--arrival {
+    font-size: 15px;
+    display: none;
+  }
+  &--delivery {
+    font-size: 15px;
+    font-family: $fonts;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    box-shadow: none;
+    &--product {
+        padding-right: 25px;
+        padding-top: 25px;
+    }
+    &--knitting {
+        padding-top: 25px;
+    }
+    &--search {
+        border-left: 1px solid $whitetwo;
+        padding: 35px 25px 35px 25px;
+    }
+    &--cart {
+        border-left: 1px solid $whitetwo;
+        padding: 35px 0 35px 25px;
+    }
+    &--delivery {
+      padding-top: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--sale, 
+    &--arrival {
+      display: block;
+      padding-right: 50px;
+      padding-top: 25px;
+    }
+    &--product {
+        padding: 35px 25px 35px 0;
+    }
+    &--knitting {      
+        border-left: 1px solid $whitetwo;
+        padding: 35px 0 35px 25px;
+    }
+    &--delivery {
+      margin-left: auto;
+      padding-top: 25px;
+    }
   }
 }
