@@ -5,6 +5,10 @@
   padding-bottom: 70px;
   text-align: center;
   margin-bottom: 30px;
+  border-top: 1px solid $whitetwo;
+	@media (min-width: $tablet-width) {
+		margin-top: -50px;
+	}
 }
 
 .header-catalog__item {

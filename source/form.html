@@ -8,26 +8,29 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation wrapper">
-        <div class="navigation__toggle">Меню</div>
+      <nav class="navigation wrapper-mob">        
+        <a class="navigation__logo" href="index.html">
+          <picture class="navigation__image">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип">
+          </picture>
+        </a>
+        <button class="navigation__toggle">Меню</button>
         <div class="navigation__wrapper">
-          <ul class="navigation__list menu">
-            <li class="menu__item menu__item--visible">
-              <a class="menu__link menu__link--logo" href="index.html">
-                <img class="menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Logotype">
-              </a>
+          <ul class="navigation__list menu ">
+            <li class="menu__item menu__item--top">
+              <a class="menu__link menu__link--product" href="catalog.html">Каталог товаров</a>
+              <a class="menu__link menu__link--knitting" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="menu__item menu__item--product">
-              <a class="menu__link" href="catalog.html">Каталог товаров</a>
+            <li class="menu__item menu__item--middle">
+              <a class="menu__link menu__link--search">Поиск по сайту</a>
+              <a class="menu__link menu__link--cart">Корзина: пока пуста</a>
             </li>
-            <li class="menu__item menu__item--knitting">
-              <a class="menu__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="menu__item menu__item--search">
-              <a class="menu__link" >Поиск по сайту</a>
-            </li>
-            <li class="menu__item menu__item--cart">
-              <a class="menu__link">Корзина: пока пуста</a>
+            <li class="menu__item menu__item--bottom">
+              <a class="menu__link menu__link--arrival">Новые поступления</a>
+              <a class="menu__link menu__link--sale">Распродажа</a>
+              <a class="menu__link menu__link--delivery">Бесплатная доставка по России</a>
             </li>
           </ul>
         </div>
