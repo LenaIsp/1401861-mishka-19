@@ -4,11 +4,11 @@
   max-width: 260px;
 
   @media (min-width: $tablet-width) {
-    max-width: 772px;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1150px;
+    max-width: 1050px;
   }
 }
 
@@ -17,10 +17,10 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 772px;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1150px;
+    max-width: 1050px;
   }
 }
