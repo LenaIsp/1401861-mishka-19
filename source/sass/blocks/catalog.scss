@@ -1,3 +1,11 @@
+.catalog {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+  }
+}
 .catalog__wrap {
   display: flex;
   flex-wrap: wrap;
@@ -13,7 +21,6 @@
   width: 100%;
   padding: 0 30px;
   box-sizing: border-box;
-
   @media (min-width: $tablet-width) {
     width: 50%;
   }
