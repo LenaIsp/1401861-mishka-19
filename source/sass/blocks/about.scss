@@ -1,14 +1,18 @@
 .about__block {
+  margin-bottom: 61px;
   @media (min-width: $tablet-width) {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
     max-width: 871px;
+    margin-bottom: 89px;
   }
+  
 }
 
 .about__header {
@@ -49,6 +53,9 @@
   @media (min-width: $tablet-width) {
     max-width: 295px;
     margin-bottom: 57px;
+  }
+  &:last-child {
+      margin-bottom: 0;
   }
 
 }
