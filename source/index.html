@@ -49,50 +49,95 @@
         <h2 class="banner__intro">Милые штуки ручной работы&nbsp;для дома</h2>
         <div class="banner__bottom catalog wrapper-mob">
           <div class="catalog__wrap">
-            <div class="catalog__item catalog__item--light">
-              <p class="catalog__title catalog__title--interior">Предметы интерьера</p>
-            </div>
-            <div class="catalog__item">
-              <p class="catalog__title catalog__title--toys">Детские игрушки</p>
-            </div>
+            <a href="#" class="catalog__item catalog__item--light">
+              <p class="catalog__title">Предметы интерьера</p>
+              <img class="catalog__image" src="img/icon-interior.svg" alt="Логотип">
+            </a>
+            <a href="#" class="catalog__item catalog__item--deep">
+              <p class="catalog__title">Детские игрушки</p>
+              <img class="catalog__image" src="img/icon-toy.svg" alt="Логотип">
+            </a>
           </div>
         </div>
       </section>
       <section class="product-card wrapper">
-        <h2 class="product-card__header">Вязаные корзинки</h2>
-        <p class="product-card__title">Товар недели</p>
-        <p class="product-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <div class="product-card__description description-card">
-          <table class="description-card__list">
-            <tr class="description-card__item">
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr class="description-card__item">
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr class="description-card__item">
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
+        <div class="product-card__block ">
+          <div class="product-card__top">
+            <h2 class="product-card__header">Вязаные корзинки</h2>
+            <p class="product-card__title">Товар недели</p>
+          </div>
+          <div class="product-card__description description-card">
+            <p class="product-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <table class="description-card__list">
+              <tr class="description-card__item">
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr class="description-card__item">
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr class="description-card__item">
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+          </div>
+          <picture class="product-card__image">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязанная корзинка">
+          </picture>
+          <div class="product-card__bottom">
+            <p class="product-card__price">Цена: 990 руб.</p>
+            <button class="product-card__button button" type="button">ЗАКАЗАТЬ</button>
+          </div>
         </div>
-        <img class="product-card__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Background">
-        <p class="product-card__price">Цена: 990 руб.</p>
-        <button class="product-card__button button" type="button">ЗАКАЗАТЬ</button>
       </section>
+      <div class="line"></div>
       <section class="about wrapper">
-        <h3 class="about__header">Коротко о нас:</h3>
-        <div class="about__left">
-          <div class="about__item about__item--flower">Экологически чистые материалы</div>
-          <div class="about__item about__item--money">Скандинавский стиль по российской цене</div>
-          <div class="about__item about__item--heart">Увеличивает лайки на фотографиях</div>
-        </div>
-        <div class="about__right">
-          <div class="about__item about__item--knot">Связано вручную с любовью и умилением</div>
-          <div class="about__item about__item--rocket">Поддержка отечественного производителя</div>
-          <div class="about__item about__item--gift">Поставляется в подарочной упаковке</div>
+        <div class="about__block">
+          <h3 class="about__header">Коротко о нас:</h3>
+          <div class="about__left">
+            <div class="about__item about__item--flower">
+              <div class="about__pictire">
+                <img class="about__img"src="img/icon-feature-flower.svg" alt="">
+              </div>
+              <p class="about__title">Экологически чистые&nbsp;материалы</p>
+            </div>
+            <div class="about__item about__item--money">
+              <div class="about__pictire">
+                <img class="about__img"src="img/icon-feature-money.svg" alt="">
+              </div>
+              <p class="about__title">Скандинавский стиль по&nbsp;российской цене</p>
+            </div>
+            <div class="about__item about__item--heart">
+              <div class="about__pictire">
+                <img class="about__img"src="img/icon-feature-heart.svg" alt="">
+              </div>    
+              <p class="about__title">Увеличивает лайки на&nbsp;фотографиях</p>
+            </div>
+          </div>
+          <div class="about__right">
+            <div class="about__item about__item--ball">
+              <div class="about__pictire">
+                <img class="about__img"src="img/icon-feature-ball.svg" alt="">
+              </div>
+              <p class="about__title">Связано вручную с любовью и умилением</p>
+            </div>
+            <div class="about__item about__item--rocket">
+              <div class="about__pictire">
+                <img class="about__img"src="img/icon-feature-rocket.svg" alt="">
+              </div>
+              <p class="about__title">Поддержка отечественного производителя</p>         
+            </div>
+            <div class="about__item about__item--gift">
+              <div class="about__pictire">
+                <img class="about__img"src="img/icon-feature-gift.svg" alt="">
+              </div>
+              <p class="about__title">Поставляется в подарочной упаковке</p>              
+            </div>
+          </div>
         </div>
       </section>
       <section class="reviews wrapper">
@@ -112,6 +157,7 @@
           <button class="reviews__button button" type="button">Написать</button>
         </div>
       </section>
+      <div class="line"></div>
       <section class="contacts wrapper">
         <h3 class="contacts__header">Контакты</h3>
         <div class="contacts__info">

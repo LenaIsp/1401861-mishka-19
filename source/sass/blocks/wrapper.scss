@@ -1,10 +1,10 @@
 .wrapper {
-  width: 100%;
+  width: calc(100% - 60px);
   margin: 0 auto;
-  max-width: 260px;
 
   @media (min-width: $tablet-width) {
-    max-width: 668px;
+    /*max-width: 668px;*/
+    width: 86.5%;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +17,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 668px;
+    width: 86.5%;
   }
 
   @media (min-width: $desktop-width) {

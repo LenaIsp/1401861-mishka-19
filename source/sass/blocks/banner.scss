@@ -1,7 +1,6 @@
 .banner {
 	border-top: 1px solid $whitetwo;
   position: relative;
-  z-index: -1;
   background-color: $bg;
 	@media (min-width: $tablet-width) {
 		margin-top: -50px;
@@ -42,10 +41,11 @@
   text-align: center;
   position: absolute;
   top: 76px;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   max-width: 244px;
   margin: 0 auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     top: 161px;

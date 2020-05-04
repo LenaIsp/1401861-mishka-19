@@ -1,0 +1,23 @@
+.line {	
+  &:before {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 100%;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-size: contain;
+    background-position: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    background-repeat-y: no-repeat;
+    @media (min-width: $tablet-width) {
+      height: 15px;
+      margin-top: 53px;
+      margin-bottom: 60px;
+    }    
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      margin:73px auto 55px auto;
+    }
+  }
+}

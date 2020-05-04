@@ -1,12 +1,14 @@
 .button {
-  width: 90%;
-  max-width: 259px;
+  width: 100%;
   border: 2px solid $greyish_brown;
-  padding: 20px 0;
+  color:  $greyish_brown;
+  padding: 15px 0;
   background-color: $white;
   cursor: pointer;
   font-family: $fonts_bold;
   font-size: 17px;
   line-height: 17px;
   text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
 }
