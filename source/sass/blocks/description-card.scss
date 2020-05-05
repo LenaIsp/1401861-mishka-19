@@ -1,0 +1,18 @@
+.description-card {
+  padding-bottom: 30px;
+}
+
+.description-card__list {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.description-card__item td {
+  border-bottom: 1px solid $grey;
+  padding: 10px 0;
+}
+
+.description-card__item td:first-child {
+  padding-right: 25px;
+  width: 100px;
+}

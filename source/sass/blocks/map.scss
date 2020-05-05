@@ -1,6 +1,12 @@
 .map {
-	text-align: center;
+  text-align: center;
 }
+
 .map__button {
-	margin: 40px 0;
+  margin: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+    margin: 40px auto;
+  }
 }

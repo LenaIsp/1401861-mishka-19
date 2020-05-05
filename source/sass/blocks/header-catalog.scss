@@ -1,13 +1,60 @@
 .header-catalog {
-	background-color: $bg-footer;
-	font-family: $fonts_bold;
-	padding-top: 90px;
-	padding-bottom: 70px;
-	text-align: center;
-	margin-bottom: 30px;
+  background-color: $bg-footer;
+  font-family: $fonts_bold;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-top: 1px solid $whitetwo;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    margin-bottom: 165px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      height: 24px;
+      width: 100%;
+      display: block;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat-y: no-repeat;
+      background-size: auto 100%;
+      background-position: top;
+      transform: rotate(180deg);
+      position: absolute;
+      top: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 34px;
+    }
+  }
 }
 
 .header-catalog__item {
-	font-size: 27px;
-	line-height: 30px;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
