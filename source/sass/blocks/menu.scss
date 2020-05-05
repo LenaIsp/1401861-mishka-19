@@ -4,11 +4,12 @@
   right: 0;
   display: none;
   text-align: center;
-  @include reset;
   font-size: 17px;
   line-height: 24px;
   font-family: $fonts_bold;
   background-color: #ffffff;
+
+  @include reset;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -22,6 +23,7 @@
 .menu__item {
   display: flex;
   flex-direction: column;
+
   &--bottom {
     display: none;
   }
@@ -58,17 +60,18 @@
       width: 100%;
     }
   }
-
 }
 
 .menu__link {
   padding: 30px 0;
-  box-shadow: 0px 1px 0 0 $whitetwo, inset 0px 1px 0 0$whitetwo;
-  &--sale, 
+  box-shadow: 0 1px 0 0 $whitetwo, inset 0 1px 0 0 $whitetwo;
+
+  &--sale,
   &--arrival {
     font-size: 15px;
     display: none;
   }
+
   &--delivery {
     font-size: 15px;
     font-family: $fonts;
@@ -77,44 +80,52 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     box-shadow: none;
+
     &--product {
-        padding-right: 25px;
-        padding-top: 25px;
-        font-size: 15px;
+      padding-right: 25px;
+      padding-top: 25px;
+      font-size: 15px;
     }
+
     &--knitting {
-        padding-top: 25px;
-        font-size: 15px;
+      padding-top: 25px;
+      font-size: 15px;
     }
+
     &--search {
-        border-left: 1px solid $whitetwo;
-        padding: 35px 25px 35px 25px;
+      border-left: 1px solid $whitetwo;
+      padding: 35px 25px 35px 25px;
     }
+
     &--cart {
-        border-left: 1px solid $whitetwo;
-        padding: 35px 0 35px 25px;
+      border-left: 1px solid $whitetwo;
+      padding: 35px 0 35px 25px;
     }
+
     &--delivery {
       padding-top: 25px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &--sale, 
+    &--sale,
     &--arrival {
       display: block;
       padding-right: 60px;
       padding-top: 25px;
     }
+
     &--product {
       padding: 35px 35px 35px 0;
       font-size: 17px;
     }
-    &--knitting {      
-        border-left: 1px solid $whitetwo;
-        padding: 35px 0 35px 35px;
-        font-size: 17px;
+
+    &--knitting {
+      border-left: 1px solid $whitetwo;
+      padding: 35px 0 35px 35px;
+      font-size: 17px;
     }
+
     &--delivery {
       margin-left: auto;
       padding-top: 25px;

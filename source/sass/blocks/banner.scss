@@ -1,10 +1,11 @@
 .banner {
-	border-top: 1px solid $whitetwo;
+  border-top: 1px solid $whitetwo;
   position: relative;
   background-color: $bg;
-	@media (min-width: $tablet-width) {
-		margin-top: -50px;
-	}
+
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+  }
 }
 
 .banner__bg {
@@ -12,9 +13,10 @@
   height: 283px;
   overflow: hidden;
   position: relative;
-    @media (min-width: $tablet-width) {
-      height: auto;
-    }
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
 }
 
 .banner__image img {
@@ -23,6 +25,7 @@
   left: 50%;
   transform: translateX(-50%);
   max-width: none;
+
   @media (min-width: $tablet-width) {
     position: relative;
     left: 0;
@@ -53,7 +56,6 @@
     line-height: 50px;
     max-width: 500px;
   }
-
 
   @media (min-width: $desktop-width) {
     top: 161px;

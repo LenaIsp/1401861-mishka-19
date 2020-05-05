@@ -1,8 +1,9 @@
-.reviews__wrapper {  
-    margin-left: auto;
-    max-width: 871px;
-    position: relative;
+.reviews__wrapper {
+  margin-left: auto;
+  max-width: 871px;
+  position: relative;
 }
+
 .reviews__header {
   font-size: 25px;
   line-height: 30px;
@@ -32,6 +33,7 @@
 
 .reviews__toogles {
   margin: 0 0 40px 0;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     position: absolute;
@@ -42,6 +44,7 @@
 
 .reviews__button {
   margin-bottom: 45px;
+
   @media (min-width: $tablet-width) {
     max-width: 175px;
     position: absolute;
