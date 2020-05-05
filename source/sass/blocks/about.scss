@@ -1,5 +1,5 @@
 .about__block {
-  margin-bottom: 61px;
+  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -58,8 +58,16 @@
     margin-bottom: 57px;
   }
 
-  &:last-child {
+  &--gift {
     margin-bottom: 0;
+  }
+
+  &--heart {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
