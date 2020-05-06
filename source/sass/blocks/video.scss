@@ -1,23 +1,124 @@
 .video {
   border: 1px solid $whitetwo;
   margin-bottom: 55px;
-  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-end;
+    height: calc(37vw + 2px);
+    max-height: 457px;
+    position: relative;
+    justify-content: center;
+  }
 }
 
 .video__header {
   font-size: 17px;
   line-height: 24px;
   font-family: $fonts_bold;
+  position: relative;
+  padding-left: 91px;
+  margin: 27px 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 27px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    margin: 0;
+    padding-left: 32px;
+    padding-top: 53px;
+    padding-right: 61px;
+    font-size: 20px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon-video.svg");
+    width: 32px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 32px;
+    background-size: 100% auto;
+    background-position: center;
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      transform: translateY(0);
+    }
+  }
+}
+
+.video__preview {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 37vw;
+    max-height: 455px;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.video__image img {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .video__text {
   font-size: 13px;
   line-height: 24px;
   color: $greyish_brown;
-  margin-bottom: 30px;
+  margin: 30px 32px;
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    margin: 0;
+    padding-left: 32px;
+    padding-right: 67px;
+    padding-top: 26px;
+    padding-bottom: 34px;
+  }
 }
 
 .video__button {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+  width: calc(100% - 64px);
+
+  @media (min-width: $desktop-width) {
+    width: calc(30% - 64px);
+    margin: 0;
+    margin-right: 32px;
+  }
 }
