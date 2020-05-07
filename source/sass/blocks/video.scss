@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,10 +90,6 @@
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .video__text {

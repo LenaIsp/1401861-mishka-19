@@ -40,67 +40,71 @@
       <div class="header-catalog">
         <h1 class="header-catalog__item">Вязание на заказ</h1>
       </div>
-      <form class="form wrapper" method="post" name="form">
-        <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <div class="form__type">
+      <form class="form" method="post" name="form">
+        <div class="form__item">
+          <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+        <div class="form__item">
           <div class="form__title">ТИП</div>
           <div class="form__body radio">
             <div class="radio__item">
               <label class="radio__label">
-                <input class="radio__inp radio__inp--active" type="radio">
-                <span class="radio__title">Аксессуар для интерьера</span>
+                <input class="radio__inp" name="radio-group" type="radio">
+                <div class="radio__title">Аксессуар для интерьера</div>
               </label>
             </div>
-            <div class="radio__item">
+            <div class="radio__item radio__item--last">
               <label class="radio__label">
-                <input class="radio__inp" type="radio">
-                <span class="radio__title">Детская игрушка</span>
+                <input class="radio__inp" name="radio-group" type="radio">
+                <div class="radio__title">Детская игрушка</div>
               </label>
             </div>
           </div>
         </div>
-        <div class="form__color">
-          <div class="form__title">ЦВЕТ</div>
-          <div class="form__body checkbox">
-            <div class="checkbox__item">
-              <label class="checkbox__label">
-                <input class="checkbox__inp checkbox__inp--active" type="checkbox">
-                <span class="checkbox__title">Белый</span>
-              </label>
+        <div class="form__item form__item--color">
+          <div class="form__wrap">
+            <div class="form__title">ЦВЕТ</div>
+            <div class="form__body checkbox">
+              <div class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__inp checkbox__inp--active" type="checkbox">
+                  <div class="checkbox__title">Белый</div>
+                </label>
+              </div>
+              <div class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__inp checkbox__inp--active" type="checkbox">
+                  <div class="checkbox__title">Серый</div>
+                </label>
+              </div>
+              <div class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__inp" type="checkbox">
+                  <div class="checkbox__title">«Тиффани»</div>
+                </label>
+              </div>
+              <div class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__inp" type="checkbox">
+                  <div class="checkbox__title">Черный</div>
+                </label>
+              </div>
+              <div class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__inp" type="checkbox">
+                  <div class="checkbox__title">Розовый</div>
+                </label>
+              </div>
+              <div class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__inp" type="checkbox">
+                  <div class="checkbox__title">Оранжевый</div>
+                </label>
+              </div>
             </div>
-            <div class="checkbox__item">
-              <label class="checkbox__label">
-                <input class="checkbox__inp checkbox__inp--active" type="checkbox">
-                <span class="checkbox__title">Серый</span>
-              </label>
             </div>
-            <div class="checkbox__item">
-              <label class="checkbox__label">
-                <input class="checkbox__inp" type="checkbox">
-                <span class="checkbox__title">«Тиффани»</span>
-              </label>
-            </div>
-            <div class="checkbox__item">
-              <label class="checkbox__label">
-                <input class="checkbox__inp" type="checkbox">
-                <span class="checkbox__title">Черный</span>
-              </label>
-            </div>
-            <div class="checkbox__item">
-              <label class="checkbox__label">
-                <input class="checkbox__inp" type="checkbox">
-                <span class="checkbox__title">Розовый</span>
-              </label>
-            </div>
-            <div class="checkbox__item">
-              <label class="checkbox__label">
-                <input class="checkbox__inp" type="checkbox">
-                <span class="checkbox__title">Оранжевый</span>
-              </label>
-            </div>
-          </div>
         </div>
-        <div class="form__info-name">
+        <div class="form__item">
           <div class="form__title">ФИО</div>
           <div class="form__body inp-text">
             <div class="inp-text__item">
@@ -111,41 +115,43 @@
               <label class="inp-text__name">Фамилия:</label>
               <input class="inp-text__enter" type="text" placeholder="Укажите фамилию*">
             </div>
-            <div class="inp-text__item">
+            <div class="inp-text__item inp-text__item--last">
               <label class="inp-text__name">Отчество:</label>
               <input class="inp-text__enter" type="text" placeholder="Отчество, если желаете">
             </div>
           </div>
         </div>
-        <div class="form__tel">
-          <div class="form__title">ТЕЛ</div>
-          <div class="form__body inp-text">
-            <div class="inp-text__item">
-              <input class="inp-text__enter" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <div class="form__item form__item--color">
+          <div class="form__wrap">
+            <div class="form__title form__title--pad">ТЕЛ</div>
+            <div class="form__body inp-text">
+              <div class="inp-text__item">
+                <input class="inp-text__enter" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              </div>
+            </div>
+          </div>
+          <div class="form__wrap">
+            <div class="form__title form__title--pad">E-MAIL</div>
+            <div class="form__body inp-text">
+              <div class="inp-text__item inp-text__item--last">
+                <input class="inp-text__enter" type="text" placeholder="Ваш Email*">
+              </div>
             </div>
           </div>
         </div>
-        <div class="form__mail">
-          <div class="form__title">E-mail</div>
-          <div class="form__body inp-text">
-            <div class="inp-text__item">
-              <input class="inp-text__enter" type="text" placeholder="Ваш Email*">
-            </div>
-          </div>
-        </div>
-        <div class="form__additional">
-          <div class="form__title">Доп</div>
+        <div class="form__item form__item--last">
+          <div class="form__title">ДОП</div>
           <div class="form__body textarea">
             <div class="textarea__item">
               <textarea class="textarea__enter" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-            <small class="form__legend">
-              <sup>*</sup>Поля обязательны для заполнения
-            </small>
           </div>
         </div>
-        <div class="form__button">
-          <button class="button" type="button">Отправить заказ</button>
+        <div class="form__item form__item--footer">
+          <small class="form__legend">
+            <sup>*</sup>Поля обязательны для заполнения
+          </small>
+          <button class="form__button button" type="button">Отправить заказ</button>
         </div>
       </form>
     </main>

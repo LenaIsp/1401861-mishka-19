@@ -1,8 +1,53 @@
+.inp-text {
+  @media (min-width: $tablet-width) {
+    width: 75%;
+  }
+}
+
 .inp-text__item {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 41px;
+  }
+
+  &--last {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .inp-text__name {
   display: block;
-  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 17px;
+  }
+}
+
+.inp-text__enter {
+  width: 100%;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-bottom: 1px solid $black;
+  color: $black_30;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 17px;
+  }
+
+  &::placeholder {
+    color: $black_30;
+    font-size: 17px;
+    line-height: 17px;
+  }
 }
