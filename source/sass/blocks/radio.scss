@@ -1,3 +1,68 @@
-.radio__inp {
+.radio__item {
   margin-bottom: 20px;
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
+
+.radio__inp {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+
+  &:checked + .radio__title::after {
+    opacity: 1;
+  }
+}
+
+.radio__title {
+  position: relative;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 60px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 80px;
+    height: 54px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $greyish_brown;
+    border-radius: 50%;
+    background: transparent;
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $greeny;
+    opacity: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 22px;
+      top: 15px;
+      left: 15px;
+    }
+  }
 }

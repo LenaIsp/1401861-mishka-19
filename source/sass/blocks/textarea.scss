@@ -1,0 +1,23 @@
+.textarea {
+  @media (min-width: $tablet-width) {
+    width: 75%;
+  }
+}
+
+.textarea__enter {
+  border: 2px solid $greyish_brown;
+  width: 100%;
+  height: 142px;
+  color: $black_30;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $fonts;
+  padding: 17px;
+
+  &::placeholder {
+    color: $black_30;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: $fonts;
+  }
+}

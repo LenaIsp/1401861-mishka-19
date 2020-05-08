@@ -1,8 +1,83 @@
+.form__item {
+  width: calc(100% - 60px);
+  margin: 30px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 86.5%;
+    margin: 50px auto;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1050px;
+    margin: 55px auto;
+    padding-left: 63px;
+  }
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      background-color: $bg-footer;
+      padding-top: 55px;
+      padding-bottom: 55px;
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: none;
+      padding-left: 0;
+    }
+  }
+
+  &--footer {
+    margin-bottom: 50px;
+    margin-top: -10px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: auto;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 63px + 113px;
+      padding-right: 131px;
+    }
+  }
+}
+
+.form__wrap {
+  @media (min-width: $tablet-width) {
+    width: 86.5%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-left: 63px;
+  }
+}
+
 .form__intro {
   font-size: 13px;
   line-height: 24px;
   color: $greyish_brown;
-  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 113px;
+    width: 85%;
+  }
 }
 
 .form__title {
@@ -11,10 +86,39 @@
   font-family: $fonts_bold;
   color: $greeny;
   margin-bottom: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 25%;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 113px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: calc(100% - 60px);
+    border-top: 1px solid $greeny;
+    right: 0;
+    height: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--pad {
+    margin-bottom: 8px;
+  }
 }
 
 .form__body {
-  margin-bottom: 35px;
   font-size: 17px;
   line-height: 17px;
   font-family: $fonts_bold;
@@ -29,4 +133,11 @@
 
 .form__button {
   margin-bottom: 50px;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+    order: -1;
+    margin: 0;
+  }
 }

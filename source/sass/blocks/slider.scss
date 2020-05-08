@@ -1,0 +1,41 @@
+.slider__toogles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider__arrow {
+  width: 50%;
+  border: 1px solid $whitetwo;
+  background-color: transparent;
+  height: 50px;
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 26px;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    width: 50px;
+    height: 26px;
+  }
+
+  &--left {
+    border-left: 1px solid $white;
+    transform: rotate(180deg);
+
+    @media (min-width: $tablet-width) {
+      border-left: 0;
+      margin-right: 19px;
+    }
+  }
+
+  &--right {
+    border-left: 1px solid $whitetwo;
+
+    @media (min-width: $tablet-width) {
+      border-left: 0;
+      margin-left: 19px;
+      margin-right: 17px;
+    }
+  }
+}

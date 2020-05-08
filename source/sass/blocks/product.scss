@@ -1,13 +1,18 @@
 .product {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 }
 
 .product__item {
   border: 1px solid $whitetwo;
-  max-width: 260px;
+  //max-width: 260px;
   margin: 0 auto 30px;
 
   @media (min-width: $tablet-width) {
@@ -26,6 +31,11 @@
 
 .product__image img {
   display: block;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .product__wrap {
