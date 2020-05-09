@@ -26,7 +26,7 @@
 
 .popups__block {
   background-color: $white;
-  box-shadow: 0px 5px 10px 0 $black_25;
+  box-shadow: 0 5px 10px 0 $black_25;
   border: solid 1px $grey_light;
   text-align: center;
   position: relative;
@@ -92,13 +92,13 @@
   }
 
   &:last-child {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
-  &:hover {    
+  &:hover {
     border: 2px solid $greyish_brown_30;
   }
-  
+
   &:active {
     border: 2px solid $green_deep;
   }
@@ -117,6 +117,7 @@
   background-color: $green_deep;
   color: $white;
 }
+
 .popups__close {
   position: absolute;
   top: 0;
