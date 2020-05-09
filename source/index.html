@@ -90,7 +90,7 @@
           </picture>
           <div class="product-card__bottom">
             <p class="product-card__price">Цена: 990 руб.</p>
-            <button class="product-card__button button" type="button">ЗАКАЗАТЬ</button>
+            <a href="#openModal" class="product-card__button button" type="button">ЗАКАЗАТЬ</a>
           </div>
         </div>
       </section>
@@ -213,5 +213,26 @@
         </a>
       </div>
     </footer>
+    <div id="openModal" class="popups">
+      <div class="popups__wrap">
+        <div class="popups__block">
+          <div class="popups__header">Добавить в корзину</div>
+          <div class="popups__title">Выберите размер:</div>
+          <div class="popups__size">
+            <a class="popups__size-item popups__size-item--active">
+              S
+            </a>
+            <a class="popups__size-item">
+              M
+            </a>
+            <a class="popups__size-item">
+              L
+            </a>
+          </div>
+          <button class="popups__button button" type="button">Добавить</button>
+        </div>
+      </div>
+      <a class="popups__close" href="#close"></a>
+    </div>
   </body>
 </html>
