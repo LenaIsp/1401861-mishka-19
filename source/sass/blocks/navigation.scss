@@ -36,10 +36,22 @@
   position: absolute;
   right: 5%;
   cursor: pointer;
-  min-height: 80px; //-для выпадающего меню
+  min-height: 80px; //-для выпадающего меню 
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-menu-open.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+  &:hover {
+    background-image: url("../img/icon-menu-close.svg");
   }
 }
 

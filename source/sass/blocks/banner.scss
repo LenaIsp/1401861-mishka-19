@@ -6,6 +6,27 @@
   @media (min-width: $tablet-width) {
     margin-top: -50px;
   }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      height: 24px;
+      width: 100%;
+      display: block;
+      background-image: url("../img/bg-zigzag-fillgrey.svg");
+      background-repeat-y: no-repeat;
+      background-size: auto 100%;
+      background-position: top;
+      transform: rotate(180deg);
+      position: absolute;
+      bottom: 0;
+      background-color: $white;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 34px;
+    }
+  }
 }
 
 .banner__bg {
