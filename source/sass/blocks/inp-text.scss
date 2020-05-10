@@ -6,6 +6,7 @@
 
 .inp-text__item {
   margin-bottom: 25px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -13,9 +14,30 @@
     margin-bottom: 41px;
   }
 
-  &--last {
+  &--phone,
+  &--mail {
+    &::after {
+      content: "";
+      width: 25px;
+      height: 24px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 100%;
+      opacity: 0.2;
+    }
+  }
+
+  &--mail {
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+    }
+    &::after {
+      background-image: url("../img/icon-mail.svg");
     }
   }
 }
@@ -37,7 +59,7 @@
   padding-bottom: 15px;
   border: 0;
   border-bottom: 1px solid $black;
-  color: $black_30;
+  color: $black;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
@@ -49,5 +71,13 @@
     color: $black_30;
     font-size: 17px;
     line-height: 17px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $greeny;
   }
 }

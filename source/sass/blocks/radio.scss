@@ -65,4 +65,10 @@
       left: 15px;
     }
   }
+
+  &:hover {
+    &::before {
+      border: 2px solid $greeny;
+    }
+  }
 }
