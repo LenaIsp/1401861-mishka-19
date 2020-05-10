@@ -81,4 +81,10 @@
       left: 11px;
     }
   }
+
+  &:hover {
+    &::before {
+      border: 2px solid $greeny;
+    }
+  }
 }
