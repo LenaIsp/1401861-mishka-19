@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
@@ -49,7 +49,7 @@
           <div class="form__body radio">
             <div class="radio__item">
               <label class="radio__label">
-                <input class="radio__inp" name="radio-group" type="radio" checked>
+                <input class="radio__inp" name="radio-group" type="radio" checked="">
                 <span class="radio__title">Аксессуар для интерьера</span>
               </label>
             </div>
@@ -67,13 +67,13 @@
             <div class="form__body checkbox">
               <div class="checkbox__item">
                 <label class="checkbox__label">
-                  <input class="checkbox__inp checkbox__inp--active" type="checkbox" checked>
+                  <input class="checkbox__inp checkbox__inp--active" type="checkbox" checked="">
                   <span class="checkbox__title">Белый</span>
                 </label>
               </div>
               <div class="checkbox__item">
                 <label class="checkbox__label">
-                  <input class="checkbox__inp checkbox__inp--active" type="checkbox" checked>
+                  <input class="checkbox__inp checkbox__inp--active" type="checkbox" checked="">
                   <span class="checkbox__title">Серый</span>
                 </label>
               </div>
@@ -158,34 +158,38 @@
     <footer class="page-footer">
       <div class="page-footer__wrap">
         <div class="page-footer__item footer-logo">
-          <img class="footer-logo__img" src="img/logo-footer.svg" width="102" height="34" alt="Логотип">
+          <svg width="102" height="34" alt="Логотип"><use xlink:href="img/sprite.svg#icon-logo-footer"></use></svg>
         </div>
         <div class="page-footer__item social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
-                <img src="img/icon-insta.svg" width="22" height="21" alt="instagram" aria-label="Instagram">
+                <svg width="22" height="21" alt="instagram" aria-label="Instagram"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                <img src="img/icon-fb.svg" width="15" height="28" alt="facebook" aria-label="Facebook">
+                <svg width="15" height="28" alt="facebook" aria-label="Facebook"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                <img src="img/icon-twitter.svg" width="23" height="20" alt="twitter" aria-label="Twitter">
+                <svg width="23" height="20" alt="twitter" aria-label="Twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
               </a>
             </li>
           </ul>
         </div>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__item copyright">
           <p class="copyright__text">Разработано</p>
-          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML-academy">
+          <svg width="27" height="34" alt="HTML-academy"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
         </a>
       </div>
     </footer>
-    <!--полифил для IE-->
+    <!--svg sprite-->
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <!--polyfil for IE-->
     <script src="js/picturefill.min.js"></script>
   </body>
 </html>

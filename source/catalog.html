@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
@@ -61,7 +61,7 @@
             <picture class="product__image">
               <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-              <img src="img/photo-bowl-mobile@1x.jpg" srcset="photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
+              <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
             </picture>
           </div>
           <div class="product__wrap">
@@ -102,30 +102,30 @@
     <footer class="page-footer">
       <div class="page-footer__wrap">
         <div class="page-footer__item footer-logo">
-          <img class="footer-logo__img" src="img/logo-footer.svg" width="102" height="34" alt="Логотип">
+          <svg width="102" height="34" alt="Логотип"><use xlink:href="img/sprite.svg#icon-logo-footer"></use></svg>
         </div>
         <div class="page-footer__item social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
-                <img src="img/icon-insta.svg" width="22" height="21" alt="instagram" aria-label="Instagram">
+                <svg width="22" height="21" alt="instagram" aria-label="Instagram"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                <img src="img/icon-fb.svg" width="15" height="28" alt="facebook" aria-label="Facebook">
+                <svg width="15" height="28" alt="facebook" aria-label="Facebook"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                <img src="img/icon-twitter.svg" width="23" height="20" alt="twitter" aria-label="Twitter">
+                <svg width="23" height="20" alt="twitter" aria-label="Twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
               </a>
             </li>
           </ul>
         </div>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__item copyright">
           <p class="copyright__text">Разработано</p>
-          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML-academy">
+          <svg width="27" height="34" alt="HTML-academy"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
         </a>
       </div>
     </footer>
@@ -150,7 +150,11 @@
       </div>
       <a class="popups__close" href="#close"></a>
     </div>
-    <!--полифил для IE-->
+    <!--svg sprite-->
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <!--polyfil for IE-->
     <script src="js/picturefill.min.js"></script>
   </body>
 </html>
