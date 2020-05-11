@@ -46,6 +46,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 $black_10;
+  }
 }
 
 .product__title {
