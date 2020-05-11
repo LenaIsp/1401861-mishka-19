@@ -12,4 +12,9 @@
   margin: 0 auto;
   display: block;
   text-align: center;
+
+  &:hover {
+    background-color: $greyish_brown;
+    color: $white;
+  }
 }

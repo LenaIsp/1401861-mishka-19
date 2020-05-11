@@ -123,6 +123,10 @@
 
 .contacts__mail {
   border-bottom: 1px solid $greeny_light;
+
+  &:hover {
+    color: $greeny_light;
+  }
 }
 
 .contacts__map {

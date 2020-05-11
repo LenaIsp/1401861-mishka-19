@@ -26,6 +26,10 @@
     transform: translateX(-50%);
     top: 9px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .navigation__image img {
