@@ -7,6 +7,7 @@ $fonts_bold: opensansbold, arial, sans-serif;
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,4 +15,5 @@ $fonts_bold: opensansbold, arial, sans-serif;
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
   font-style: bold;
+  font-display: swap;
 }

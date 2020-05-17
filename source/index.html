@@ -5,6 +5,7 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
   </head>
   <body>
     <header class="page-header">
@@ -16,7 +17,7 @@
             <img src="img/logo-mobile.svg" width="85" height="35" alt="Логотип">
           </picture>
         </a>
-        <button class="navigation__toggle">Меню</button>
+        <button class="navigation__toggle" aria-label="Открыть меню">Меню</button>
         <div class="navigation__wrapper">
           <ul class="navigation__list menu ">
             <li class="menu__item menu__item--top">
@@ -198,17 +199,17 @@
         <div class="page-footer__item social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
+              <a class="social__link social__link--instagram" href="#" aria-label="Instagram">
                 <svg width="22" height="21"><use xlink:href="#icon-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
+              <a class="social__link social__link--facebook" href="#" aria-label="Facebook">
                 <svg width="15" height="28"><use xlink:href="#icon-fb"></use></svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
+              <a class="social__link social__link--twitter" href="#" aria-label="Twitter">
                 <svg width="23" height="20"><use xlink:href="#icon-twitter"></use></svg>
               </a>
             </li>
@@ -239,13 +240,12 @@
           <button class="popups__button button" type="button">Добавить</button>
         </div>
       </div>
-      <a class="popups__close" href="#close"></a>
+      <a class="popups__close" href="#close" aria-label="Закрыть"></a>
     </div>
     <!--svg sprite-->
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <!--полифил для IE-->
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>
