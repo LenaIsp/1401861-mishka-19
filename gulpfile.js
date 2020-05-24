@@ -20,6 +20,17 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var babel = require('gulp-babel');
 
+//таска для работы с HTML-файлами
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+});
+
+//таска для работы с SCSS-файлами
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -34,22 +45,8 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-});
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build"));
-});
+
+//таска для минификации изображений png,jpg,svg
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
@@ -59,13 +56,35 @@ gulp.task("images", function () {
   ]))
   .pipe(gulp.dest("source/img"));
 });
+
+//таска для создания svg-спрайта
+gulp.task("sprite", function () {
+  return gulp.src("source/img/sprite/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img/sprite"));
+});
+
+//таска для создания webp-изображений (запускается отдельно)
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 80}))
   .pipe(gulp.dest("source/img"));
 });
+
+//таска для работы с библиотеками(объединяет и минимизирует)
+gulp.task("libs", function () {
+  return gulp.src(["source/js/libs/*.js", "source/js/polyfill/*.js"])
+    .pipe(concat('libs.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"))
+});
+
+//таска для работы с js-файлами
 gulp.task("js", function () {
-  return gulp.src("source/js/**/*.js")
+  return gulp.src("source/js/*.js")
     .pipe(sourcemap.init())
     .pipe(babel({
       presets: ['env']
@@ -75,6 +94,8 @@ gulp.task("js", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"))
 });
+
+//таска переносит файлы в папку build
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
@@ -85,9 +106,13 @@ gulp.task("copy", function () {
     })
     .pipe(gulp.dest("build"));
 });
+
+//удаляет папку build
 gulp.task("clean", function () {
   return del("build");
 });
+
+//локальный сервер
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -97,14 +122,16 @@ gulp.task("server", function () {
     ui: false
   });
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("source/js/**/*.js", gulp.series("js", "refresh"));
+  gulp.watch("source/img/sprite/*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/fonts/**/*.{woff,woff2}", gulp.series("copy", "refresh"));
+  gulp.watch(["source/js/libs/*.js", "source/js/polyfill/*.js"], gulp.series("libs", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("js", "refresh"));
 });
 gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
 
-gulp.task("build", gulp.series("clean", "css", "copy", "sprite", "html", "js"));
+gulp.task("build", gulp.series("clean", "css", "copy", "sprite", "html", "libs", "js"));
 gulp.task("start", gulp.series("build", "server"));
